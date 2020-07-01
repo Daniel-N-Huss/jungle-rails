@@ -102,6 +102,17 @@ RSpec.describe User, type: :model do
       expect(@authenticated).to eq(false)
     end
 
+    it 'returns the matching user from the db if the credentials are correct, even with case-insensitive email with lead/tail whitespace' do
+      @user = User.new(first_name: 'Allan', last_name: 'Rickman', email: 'TEST@gmail.com', password: 'mrPotter?@', password_confirmation: 'mrPotter?@')
+      @user.save
+      @email = 'test@gmail.com'
+      @password = 'mrPotter?@'
+      @authenticated = User.authenticate_with_credentials(@email, @password)
+
+      expect(@authenticated.email).to eq(@email)
+      expect(@authenticated.password_digest).to_not eq(@password)
+    end
+
   end
 
 end
