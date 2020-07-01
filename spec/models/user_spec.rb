@@ -74,6 +74,28 @@ RSpec.describe User, type: :model do
   end
 
   describe '.authenticate_with_credentials' do
+
+    it 'returns the matching user from the db if the credentials are correct' do
+      @user = User.new(first_name: 'Allan', last_name: 'Rickman', email: 'TEST@gmail.com', password: 'mrPotter?@', password_confirmation: 'mrPotter?@')
+      @user.save
+      @email = 'test@gmail.com'
+      @password = 'mrPotter?@'
+      @authenticated = User.authenticate_with_credentials(@email, @password)
+
+      expect(@authenticated.email).to eq(@email)
+      expect(@authenticated.password_digest).to_not eq(@password)
+    end
+    
+    it 'does not return a user if the credentials are incorrect' do
+      @user = User.new(first_name: 'Allan', last_name: 'Rickman', email: 'TEST@gmail.com', password: 'mrPotter?@', password_confirmation: 'mrPotter?@')
+      @user.save
+      @email = 'test@gmail.com'
+      @password = 'OhHeyThereItsNotThePassword'
+      @authenticated = User.authenticate_with_credentials(@email, @password)
+
+      expect(@authenticated).to eq(false)
+    end
+
   end
 
 end
