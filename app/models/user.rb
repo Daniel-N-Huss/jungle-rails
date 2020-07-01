@@ -6,10 +6,11 @@ class User < ActiveRecord::Base
   validates :password, presence: true, length: { minimum: 8 }
 
 
-  before_save :downcase_email
+  before_save :cleanup_email
 
-  def downcase_email
+  def cleanup_email
     self.email.downcase!
+    self.email.strip!
   end
 
   def self.authenticate_with_credentials(email, password)

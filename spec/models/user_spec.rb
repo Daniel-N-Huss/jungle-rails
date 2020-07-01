@@ -63,6 +63,12 @@ RSpec.describe User, type: :model do
       @user_dup.valid?
       expect(@user_dup.errors.messages[:email]).to include("has already been taken")
     end
+    
+    it 'will be valid with leading or trailing spaces around the email' do
+      @user = User.new(first_name: 'Allan', last_name: 'Rickman', email: '   test@gmail.com ', password: 'mrPotter?@', password_confirmation: 'mrPotter?@')
+      @user.save
+      expect(@user.errors.messages).to eq({})
+    end
 
     it 'will not be valid if the password is less than 8 characters' do
       @user = User.new(first_name: 'Allan', last_name: 'Rickman', email: 'TEST@gmail.com', password: 'hiDad', password_confirmation: 'hiDad')
