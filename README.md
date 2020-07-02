@@ -4,6 +4,28 @@ A mini e-commerce application built with Rails 4.2 for purposes of learning Rail
 
 Key priorities for the project included expanding functionality while following existing project conventions. The overarching goal was to get comfortable quickly picking up a new language and framework, and rapidly getting to a comfort implementing features. 
 
+Following some functionality expansion, building out some automated testing specs on the existing codebase proved to be a good exercise in grasping that existing codebase more thorougly. 
+
+Example bug fixes:
+- Format item prices uniformly throughout the website
+- Don't allow the user to access the checkout process with an empty cart.
+
+Example features added:
+- Secure user login
+- Require authorization for admin dashboard access
+- Testing with Rspec
+
+## Project Images
+
+### Main Store View
+[Main store view!](https://github.com/Daniel-N-Huss/jungle-rails/blob/master/docs/Screen%20Shot%202020-07-01%20at%208.45.54%20PM.png?raw=true)
+
+### Admin dashboard example
+[Example of admin dashboard!](https://github.com/Daniel-N-Huss/jungle-rails/blob/master/docs/Screen%20Shot%202020-07-01%20at%209.03.08%20PM.png?raw=true)
+
+### Order Reciept After Checkout
+
+[Order receipt!](https://github.com/Daniel-N-Huss/jungle-rails/blob/master/docs/Screen%20Shot%202020-07-01%20at%209.03.53%20PM.png?raw=true)
 
 ## Setup
 
