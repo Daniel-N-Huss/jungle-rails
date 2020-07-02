@@ -18,14 +18,14 @@ Example features added:
 ## Project Images
 
 ### Main Store View
-[Main store view!](https://github.com/Daniel-N-Huss/jungle-rails/blob/master/docs/Screen%20Shot%202020-07-01%20at%208.45.54%20PM.png?raw=true)
+![Main store view](https://github.com/Daniel-N-Huss/jungle-rails/blob/master/docs/Screen%20Shot%202020-07-01%20at%208.45.54%20PM.png?raw=true)
 
 ### Admin dashboard example
-[Example of admin dashboard!](https://github.com/Daniel-N-Huss/jungle-rails/blob/master/docs/Screen%20Shot%202020-07-01%20at%209.03.08%20PM.png?raw=true)
+![Example of admin dashboard](https://github.com/Daniel-N-Huss/jungle-rails/blob/master/docs/Screen%20Shot%202020-07-01%20at%209.03.08%20PM.png?raw=true)
 
 ### Order Reciept After Checkout
 
-[Order receipt!](https://github.com/Daniel-N-Huss/jungle-rails/blob/master/docs/Screen%20Shot%202020-07-01%20at%209.03.53%20PM.png?raw=true)
+![Order receipt](https://github.com/Daniel-N-Huss/jungle-rails/blob/master/docs/Screen%20Shot%202020-07-01%20at%209.03.53%20PM.png?raw=true)
 
 ## Setup
 
