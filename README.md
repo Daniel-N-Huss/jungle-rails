@@ -1,6 +1,8 @@
 # Jungle
 
-A mini e-commerce application built with Rails 4.2 for purposes of teaching Rails by example.
+A mini e-commerce application built with Rails 4.2 for purposes of learning Rails through example. The basic functionality of the app was inherited, and the focus of this project was to expand features and fix bugs on the platform based on bug reports. 
+
+Key priorities for the project included expanding functionality while following existing project conventions. The overarching goal was to get comfortable quickly picking up a new language and framework, and rapidly getting to a comfort implementing features. 
 
 
 ## Setup
@@ -16,7 +18,7 @@ A mini e-commerce application built with Rails 4.2 for purposes of teaching Rail
 
 ## Stripe Testing
 
-Use Credit Card # 4111 1111 1111 1111 for testing success scenarios.
+Use Credit Card # 4242 4242 4242 4242 along with any future date and any 3 digit security pin for testing success scenarios.
 
 More information in their docs: <https://stripe.com/docs/testing#cards>
 
